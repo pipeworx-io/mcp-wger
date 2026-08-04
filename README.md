@@ -2,16 +2,16 @@
 
 Wger MCP — wraps wger Workout Manager REST API (free, no auth for read)
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `list_exercises` | List exercises from the wger database (English language only). |
+| `list_exercises` | List fitness exercises from the wger database in English; optionally limit count (default 20). Returns exercise name, description, category, primary and secondary muscles, and required equipment per entry. |
 | `get_exercise` | Get detailed information for a specific exercise by its numeric ID. |
-| `list_muscles` | List all muscles tracked in the wger database. |
-| `list_equipment` | List all equipment types available in the wger database. |
+| `list_muscles` | List all muscles tracked in the wger database. Returns each muscle's numeric ID, English name, and whether it is located on the front of the body. |
+| `list_equipment` | List all gym equipment types in the wger database. Returns each item's numeric ID and name (e.g., 'Barbell', 'Dumbbell', 'Kettlebell'). |
 
 ## Quick Start
 
@@ -27,7 +27,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -51,7 +51,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License

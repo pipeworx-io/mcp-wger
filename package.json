@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-wger",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Wger MCP — wraps wger Workout Manager REST API (free, no auth for read)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-wger": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "wger"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-wger.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/wger",
   "pipeworx": {
-    "sourceHash": "v1-3b141aadb5cc216e5488066aa8bde092b2b3069930e89d7312c883b44e2451a9",
-    "sourceCommit": "2cb50b368da3267446f2b6f6a3ddbd3d0eed3d73"
+    "mode": "gateway",
+    "slug": "wger",
+    "gatewaySlug": "wger",
+    "sourceHash": "v1-bfe1a007346af1fed7431ed9794fbada3516a3fb6a81a9e6a6e20adabcd54dec",
+    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-wger",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Wger MCP — wraps wger Workout Manager REST API (free, no auth for read)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "wger",
     "gatewaySlug": "wger",
-    "sourceHash": "v1-bfe1a007346af1fed7431ed9794fbada3516a3fb6a81a9e6a6e20adabcd54dec",
-    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
+    "sourceHash": "v1-4ebf8f2b0ceff1edd3d7d4503bee1133ef83ee5e65d5e7a2248bc433f12516e3",
+    "sourceCommit": "78b905fa3a6880dfb85c79150f4bffe8cf50ef00"
   }
 }

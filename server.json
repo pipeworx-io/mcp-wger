@@ -1,9 +1,9 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/wger",
-  "title": "Wger",
-  "description": "Wger MCP — wraps wger Workout Manager REST API (free, no auth for read)",
-  "version": "1.1.1",
+  "title": "Wger (Unofficial)",
+  "description": "Unofficial Wger MCP — wraps wger Workout Manager REST API (free, no auth for read)",
+  "version": "1.1.2",
   "websiteUrl": "https://pipeworx.io/packs/wger",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-wger",
